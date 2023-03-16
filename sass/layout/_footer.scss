@@ -1,0 +1,43 @@
+footer {
+  padding: 3rem;
+  background-color: $dark-grey-opacity;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .author {
+    color: $color-white-2;
+  }
+
+  @include respond(desktop) {
+    min-width: 150rem;
+  }
+  .footer {
+    &__list {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      gap: 8.3rem;
+
+      list-style: none;
+    }
+
+    .ph-light {
+      font-size: $big-size;
+    }
+
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+      color: $light-grey;
+      transition: all 0.1s;
+    }
+
+    &__link:hover,
+    &__link:active {
+      text-decoration: none;
+      @include blur-effect;
+    }
+  }
+}

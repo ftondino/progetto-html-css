@@ -1,0 +1,86 @@
+.btn-arrow {
+  position: absolute;
+  bottom: -3rem;
+  right: 4rem;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &:link,
+  &:visited {
+    color: $light-grey;
+    text-decoration: none;
+    font-size: 15rem;
+  }
+
+  &:hover,
+  &:active {
+    @include blur-effect;
+    transition: all 0.2s;
+  }
+}
+
+.btn-cv {
+  border-radius: 50px;
+  padding: 2rem;
+  text-align: center;
+  font-size: $default-size;
+  border: none;
+  text-decoration: none;
+
+  color: $medium-grey;
+  background-color: $color-white;
+  @include shadow-1;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+.btn-caption {
+  &:link,
+  &:hover {
+    color: $dark-grey;
+
+    text-decoration: none;
+    padding: 2rem;
+    background-color: $color-white;
+    border-radius: 50px;
+    transition: all 0.2s;
+    @include blur-effect;
+  }
+
+  &:visited,
+  &:active {
+    color: $dark-grey;
+  }
+}
+
+.btn-form {
+  border-radius: $default-radius;
+  padding: 1.2rem;
+  font-size: $default-size;
+  border: none;
+  color: $medium-grey;
+  background-color: $color-white;
+  @include shadow-1;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}

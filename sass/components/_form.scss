@@ -1,0 +1,50 @@
+.form {
+  position: relative;
+  height: 80vh;
+
+  &__container {
+    padding: 6rem;
+    border-radius: $default-radius;
+    background-color: $color-white-1;
+    @include shadow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.form__cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  .form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .message {
+    grid-row: 2;
+    grid-column: -3 / -1;
+  }
+
+  .form__item label {
+    display: block;
+    color: $medium-grey;
+  }
+
+  .form__item input,
+  .form__item textarea {
+    border-radius: $default-radius;
+    padding: 1.2rem;
+    font-size: $default-size;
+    border: none;
+    color: $medium-grey;
+    @include shadow-1;
+  }
+}

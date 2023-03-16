@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esplora il mio portfolio di sviluppo web e scopri le mie competenze nella creazione di siti web intuitivi e reattivi.  Esplora il mio lavoro e contattami per creare un sito web unico e coinvolgente per il tuo business!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Flora Tondino - Web developer" />
+    <meta
+      property="og:description"
+      content="Esplora il mio portfolio di sviluppo web e scopri le mie competenze nella creazione di siti web intuitivi e reattivi.  Esplora il mio lavoro e contattami per creare un sito web unico e coinvolgente per il tuo business!"
+    />
+    <meta property="og:site_name" content="Flora Tondino - Web developer" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Flora Tondino - Web developer</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-desktop">
+          <ul class="nav-desktop__list">
+            <li class="nav-desktop__item">
+              <a href="#section-hero" class="nav-desktop__link">Home</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#section-about" class="nav-desktop__link">About me</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#section-works" class="nav-desktop__link">Portfolio</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#section-form" class="nav-desktop__link">Contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-mobile">
+          <input type="checkbox" class="nav-mobile__toggler" />
+          <div class="nav-mobile__hamburger">
+            <div></div>
+          </div>
+
+          <div class="nav-mobile__menu">
+            <div>
+              <div>
+                <ul class="nav-mobile__list">
+                  <li class="nav-mobile__item">
+                    <a href="#section-hero" class="nav-mobile__link">Home</a>
+                  </li>
+                  <li class="nav-mobile__item">
+                    <a href="#section-about" class="nav-mobile__link"
+                      >About me</a
+                    >
+                  </li>
+                  <li class="nav-mobile__item">
+                    <a href="#section-works" class="nav-mobile__link"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="nav-mobile__item">
+                    <a href="#section-form" class="nav-mobile__link"
+                      >Contact me</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section-hero" id="section-hero">
+        <div class="hero">
+          <div class="video video--overlay">
+            <video class="video--content" autoplay muted loop>
+              <source src="assets/video/flare-25960.mp4" />
+            </video>
+          </div>
+
+          <div class="hero__text">
+            <h1 class="heading-primary center-text">
+              <span class="heading-primary--main">Flora Tondino</span>
+              <span class="heading-primary--sub">Web developer</span>
+            </h1>
+          </div>
+
+          <a href="#section-about" class="btn-arrow"
+            ><i class="ph-thin ph-caret-down"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="section-about" id="section-about">
+        <div class="card">
+          <div class="card__about">
+            <h2 class="heading-secondary center-text">About me</h2>
+            <div class="about-content">
+              <div class="about-content__figure">
+                <img
+                  src="assets/img/foto-flora-tondino.jpeg"
+                  alt="foto di Flora Tondino"
+                  class="about-content__photo"
+                />
+              </div>
+
+              <div class="about-content__text center-text">
+                <p>
+                  <span class="about-content__text--big"
+                    >Ciao! Sono Flora,</span
+                  >
+                  <br />
+                  <span class="about-content__text--normal"
+                    >una web developer alle prime armi. <br />
+                    La mia più grande aspirazione è creare siti sempre più belli
+                    e funzionali e migliorare sempre di più come web developer,
+                    imparando nuove tecniche e migliorando le mie competenze.
+                    <br />
+                    Al di fuori del lavoro, mi piace dedicarmi al disegno e alla
+                    lettura, che mi aiutano a mantenere la mia creatività in
+                    costante crescita.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__skills">
+            <h2 class="heading-secondary center-text">Skills</h2>
+            <div class="card__container">
+              <div class="skill__container">
+                <figure class="skill">
+                  <img
+                    src="assets/img/loghi/logo-html.png"
+                    alt="html logo"
+                    class="skill__logo"
+                  />
+                  <figcaption class="skill__figcaption">HTML</figcaption>
+                </figure>
+                <figure class="skill">
+                  <img
+                    src="assets/img/loghi/logo-css.png"
+                    alt="css logo"
+                    class="skill__logo"
+                  />
+                  <figcaption class="skill__figcaption">CSS</figcaption>
+                </figure>
+                <figure class="skill">
+                  <img
+                    src="assets/img/loghi/logo-sass.png"
+                    alt="sass logo"
+                    class="skill__logo"
+                  />
+                  <figcaption class="skill__figcaption">Sass</figcaption>
+                </figure>
+                <figure class="skill">
+                  <img
+                    src="assets/img/loghi/logo-bootstrap.png"
+                    alt="bootstrap logo"
+                    class="skill__logo"
+                  />
+                  <figcaption class="skill__figcaption">Bootstrap</figcaption>
+                </figure>
+              </div>
+              <a href="cv.html" class="btn-cv">Guarda il mio CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-works" id="section-works">
+        <div class="projects">
+          <h2 class="heading-secondary skills center-text">Projects</h2>
+          <div class="project-grid">
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-1.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-2.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-3.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-4.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-5.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-6.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-7.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+            <figure class="project-grid__figure">
+              <img
+                src="assets/img/foto-progetti/esempio-8.jpg"
+                alt="foto esempio"
+                class="project-grid__photo"
+              />
+
+              <figcaption class="project-grid__caption">
+                <a href="" class="btn-caption">Scopri di più!</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-form" id="section-form">
+        <div class="form">
+          <div class="form__container">
+            <h2 class="heading-secondary center-text">Lavoriamo insieme!</h2>
+            <form
+              target="_blank"
+              class="form__cta"
+              action="https://formsubmit.co/flora.tondino@gmail.com"
+              method="POST"
+            >
+              <div class="form__item">
+                <label for="nome">Il tuo nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="name"
+                  ;
+                  placeholder="Il tuo nome"
+                  required
+                />
+              </div>
+
+              <div class="form__item">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form__item message">
+                <label for="messaggio">Messaggio</label>
+                <textarea
+                  name="message"
+                  id="messaggio"
+                  cols="45"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-form">Manda</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <i class="ph-light ph-github-logo"></i>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <i class="ph-light ph-linkedin-logo"></i>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link"
+              ><i class="ph-light ph-instagram-logo"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="author">
+        <p>Made by Flora &#10084;</p>
+      </div>
+    </footer>
+  </body>
+</html>
