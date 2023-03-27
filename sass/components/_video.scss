@@ -21,10 +21,6 @@
       -webkit-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
     }
-
-    @include respond(desktop) {
-      min-width: 150rem;
-    }
   }
 
   &--content {

@@ -5,26 +5,15 @@
 .section-about {
   padding: 10rem 0;
   background-color: $color-white-2;
-
-  @include respond(desktop) {
-    min-width: 150rem;
-  }
 }
 
 .section-works {
   background-color: $color-white-2;
   padding: 5rem 0;
-  @include respond(desktop) {
-    min-width: 150rem;
-  }
 }
 
 .section-form {
   background-color: $color-white-2;
   position: relative;
   padding: 10rem 0;
-
-  @include respond(desktop) {
-    min-width: 150rem;
-  }
 }

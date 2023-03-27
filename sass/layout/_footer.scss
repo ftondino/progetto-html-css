@@ -7,11 +7,9 @@ footer {
 
   .author {
     color: $color-white-2;
+    text-align: center;
   }
 
-  @include respond(desktop) {
-    min-width: 150rem;
-  }
   .footer {
     &__list {
       height: 100%;
@@ -21,6 +19,12 @@ footer {
       gap: 8.3rem;
 
       list-style: none;
+
+      @include respond(phone) {
+        justify-content: flex-start;
+        gap: 3.5rem;
+        padding-right: 10rem;
+      }
     }
 
     .ph-light {

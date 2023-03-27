@@ -13,15 +13,43 @@ body {
   font-weight: 300;
   @include blur-effect;
 
+  @include respond(tab-port) {
+    width: 70rem;
+  }
+
+  @include respond(phone) {
+    width: 30rem;
+  }
+
   &--main {
     font-size: $huge-size;
     letter-spacing: 3.5rem;
     display: block;
     margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      font-size: 4rem;
+      letter-spacing: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+      letter-spacing: 1.5rem;
+    }
   }
   &--sub {
     letter-spacing: 3rem;
     font-size: $big-size;
+
+    @include respond(tab-port) {
+      letter-spacing: 2rem;
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 1.5rem;
+    }
   }
 }
 
@@ -30,6 +58,13 @@ body {
   font-weight: 300;
   font-size: $huge-size;
   letter-spacing: 3.5rem;
+
+  text-align: center;
+  @include respond(phone) {
+    font-size: 2.5rem;
+    letter-spacing: 2.5rem;
+    width: 80%;
+  }
 }
 
 .heading-secondary {
@@ -37,6 +72,14 @@ body {
   font-size: $big-size;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .about-content__text {
@@ -46,6 +89,14 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     color: $medium-grey-1;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 }
 

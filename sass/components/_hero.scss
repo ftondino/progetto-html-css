@@ -2,10 +2,6 @@
   height: 100vh;
   position: relative;
 
-  @include respond(desktop) {
-    min-width: 150rem;
-  }
-
   @include respond(phone) {
     .video {
       display: none;

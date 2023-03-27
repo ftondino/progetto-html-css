@@ -2,16 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10rem;
   padding: 10rem 0;
-
-  @include respond(tab-land) {
-    min-width: 130rem;
-  }
-
-  @include respond(tab-port) {
-    padding: 10rem;
-  }
 
   .container {
     max-width: 114rem;
@@ -22,6 +15,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 6rem;
     column-gap: 6rem;
+
+    @include respond(phone) {
+      padding: 5rem;
+    }
 
     grid-template-areas:
       "box-1 box-2"
